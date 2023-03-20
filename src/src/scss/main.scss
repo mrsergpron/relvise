@@ -1,0 +1,118 @@
+.main {
+  background: url("../img/main/cover.jpg") 100% / cover no-repeat;
+  //background: url("../img/main/cover.jpg") top right no-repeat;
+  //background-size: contain;
+}
+.main__container {
+  padding: 0 15px;
+}
+.main__content {
+  padding: 184px 0 191px 0;
+  max-width: 509px;
+
+  & > *:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.main__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 137.931034%; /* 80px/58 */
+  letter-spacing: 0.2px;
+  color: $firstTextColor;
+
+  @media (max-width: 575.98px) {
+    font-size: 40px;
+    color: #17213c;
+  }
+}
+.main__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%; /* 30px/20 */
+  letter-spacing: 0.2px;
+  color: $secondTextolor;
+  margin-right: 133px;
+
+  @media (max-width: 575.98px) {
+    color: #bdbdbd;
+    margin-right: 15px;
+  }
+}
+.main__buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.main__button-color {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 200%; /* 28px/14 */
+
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  color: #ffffff;
+
+  width: 187px;
+  height: 48px;
+  padding: 10px 36px;
+  background: #ff7b47;
+  border-radius: 37px;
+  transition: all 1s ease 0s;
+
+  @media (max-width: 575.98px) {
+    width: 90%;
+  }
+}
+.main__button-color:hover {
+  background-color: transparent;
+  border: 1px solid #ff7b47;
+  color: #0d5c63;
+}
+.main__button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 200%; /* 28px/14 */
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  color: #0d5c63;
+
+  width: 157px;
+  height: 48px;
+
+  padding: 10px 36px;
+
+  border: 1px solid #0d5c63;
+  border-radius: 37px;
+  transition: all 1s ease 0s;
+
+  &:hover {
+    background: #0d5c63;
+    border: none;
+    color: #fff;
+  }
+
+  @media (max-width: 575.98px) {
+    width: 90%;
+  }
+}
+
+// Breakpoints
+// smart phone vertical 320 / 319.98
+// smart phone gorizontal 576 / 575.98
+// tablet vertical 768 / 767.98
+// tablet gorizontal 992 / 991.98
+// desktop 1200 / 1199.98
+// big desktop 1400 / 1399.98
