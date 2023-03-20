@@ -1,0 +1,51 @@
+.social {
+  background-color: #fafafa;
+  padding: 25px 0;
+}
+.social__container {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171.428571%; /* 24px/14 */
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social__icons a:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .social__container {
+    flex-direction: column;
+  }
+  .social__text {
+    text-align: center;
+  }
+  .social__text:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .social__icons {
+    justify-content: center;
+  }
+}
+
+// Breakpoints
+// smart phone vertical 320 / 319.98
+// smart phone gorizontal 576 / 575.98
+// tablet vertical 768 / 767.98
+// tablet gorizontal 992 / 991.98
+// desktop 1200 / 1199.98
+// big desktop 1400 / 1399.98

@@ -1,0 +1,121 @@
+.getintouch {
+  background-color: #f3f3f3;
+  padding: 80px 0 136px;
+}
+
+.getintouch__container {
+  padding: 0 32px;
+}
+
+.getintouch__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.getintouch__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 40px;
+  flex: 0 1 33.3333%;
+}
+
+.getintouch__item {
+  background-color: #ffffff;
+}
+
+.getintouch__icon,
+.getintouch__email,
+.getintouch__label:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+
+.getintouch__email {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171.428571%; /* 24px/14 */
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.getintouch__email a {
+  color: #252b42;
+}
+
+.getintouch__email a:hover {
+  text-decoration: underline;
+}
+
+.getintouch__label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%; /* 24px/16 */
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+
+.getintouch__button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171.428571%; /* 24px/14 */
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ff7b47;
+
+  padding: 10px 20px;
+  border: 1px solid #ff7b47;
+  border-radius: 5px;
+  transition: all 1s ease 0s;
+}
+.getintouch__button:hover {
+  background-color: #ff7b47;
+  color: #fff;
+}
+
+.getintouch__item_active {
+  background-color: #252b42;
+  padding: 80px 40px;
+}
+.getintouch__item_active .getintouch__email a {
+  color: #fff;
+}
+.getintouch__item_active .getintouch__label {
+  color: #fff;
+}
+.getintouch__item_active .getintouch__button {
+  color: #fff;
+  border: 1px solid #fff;
+}
+@media (max-width: 991.98px) {
+  .getintouch {
+    padding: 40px 0 60px;
+  }
+  .getintouch__container {
+    padding: 0;
+  }
+  .getintouch__items {
+    padding-top: 40px;
+  }
+  .getintouch__items {
+    flex-direction: column;
+  }
+  .getintouch__item {
+    width: 100%;
+  }
+  .getintouch__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

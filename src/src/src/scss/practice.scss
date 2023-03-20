@@ -1,0 +1,74 @@
+.practice__container {
+  background-color: #fafafa;
+  padding: 0 15px 80px;
+}
+.practice__header {
+  margin-bottom: 45px;
+}
+
+.practice__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.practice__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 22%;
+
+  @media (max-width: 1045px) {
+    flex: 0 1 47%;
+  }
+}
+
+.practice__item:not(:last-child) {
+  margin-right: 30px;
+}
+.practice__wrap {
+  padding: 30px;
+}
+.practice__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%; /* 24px/16 */
+  letter-spacing: 0.1px;
+  color: #252b42;
+  margin-bottom: 15px;
+}
+.practice__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.857143%; /* 20px/14 */
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.practice__image img {
+  width: 100%;
+}
+@media (max-width: 1045px) {
+  .practice__item:nth-child(2) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .practice__item {
+    flex: 0 1 100%;
+  }
+  .practice__item:nth-child(1) {
+    margin-right: 0;
+  }
+  .practice__item:nth-child(3) {
+    margin-right: 0;
+  }
+}
+// Breakpoints
+// smart phone vertical 320 / 319.98
+// smart phone gorizontal 576 / 575.98
+// tablet vertical 768 / 767.98
+// tablet gorizontal 992 / 991.98
+// desktop 1200 / 1199.98
+// big desktop 1400 / 1399.98

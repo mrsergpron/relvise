@@ -1,0 +1,32 @@
+.clients {
+  background-color: #fafafa;
+  padding: 50px 0;
+
+  &__container {
+    padding: 0 15px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 0 1 16.6667%;
+    text-align: center;
+    min-width: 140px;
+    padding: 10px;
+  }
+  &__item img {
+    max-width: 100%;
+  }
+}
+// Breakpoints
+// smart phone vertical 320 / 319.98
+// smart phone gorizontal 576 / 575.98
+// tablet vertical 768 / 767.98
+// tablet gorizontal 992 / 991.98
+// desktop 1200 / 1199.98
+// big desktop 1400 / 1399.98
